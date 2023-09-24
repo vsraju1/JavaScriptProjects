@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin-top: 2px;
+    display: inline-block;
+    border: 2px solid white;
+}
+h1,p{
+    
+    color: white;
+    margin: 20px;
+}
+#blue{
+    background-color: blue;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#gray{
+    background-color: gray;
+}

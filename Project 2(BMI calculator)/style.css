@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.form{
+    height: fit-content;
+    width: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 5px;
+}
+.form .height,.weight,.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    justify-self: center;
+}
+.form input{
+    padding: 5px;
+}
+.result{
+    margin-top: 60px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.result  p{
+    margin-top: 20px;    
+}
