@@ -15,11 +15,36 @@ let compChoice = comData[randomChoiceNum].toUpperCase();
 // Asking user to select their choice 
 const userInput = prompt("Enter your choice (rock/paper/scissor or r/p/s): ").toUpperCase();
 
-
+// Checking if user has entered a valid input
 if(possibleInputs.includes(userInput)) {
-    if(userInput === "ROCK" || userInput === "R" && compChoice === "ROCK") {
+    if(userInput === compChoice) {
         console.log(`Computer choice is ${compChoice}`)
-        console.log(`User choice is ${userInput}`)
+        console.log(`Your choice is ${userInput}`)
+        console.log("It's a tie")
+    }else if (userInput === "PAPERS" || userInput === "PAPER" && compChoice === "ROCK") {
+        console.log(`Computer choice is ${compChoice}`)
+        console.log(`Your choice is ${userInput}`)
+        console.log("You win!!!")
+    }else if (userInput === "SCISSORS" && compChoice === "ROCK") {
+        console.log(`Computer choice is ${compChoice}`)
+        console.log(`Your choice is ${userInput}`)
+        console.log("You loose!!!")
+    }else if (userInput === "ROCK" && compChoice === "PAPER") {
+        console.log(`Computer choice is ${compChoice}`)
+        console.log(`Your choice is ${userInput}`)
+        console.log("Computer has won the match!!!")
+    }else if (userInput === "SCISSOR" && compChoice === "PAPER") {
+        console.log(`Computer choice is ${compChoice}`)
+        console.log(`Your choice is ${userInput}`)
+        console.log("You win!!!")
+    }else if (userInput === "PAPERS" || userInput === "PAPER" && compChoice === "SCISSOR") {
+        console.log(`Computer choice is ${compChoice}`)
+        console.log(`Your choice is ${userInput}`)
+        console.log("You lost!!!")
+    }else if (userInput === "ROCK" && compChoice === "SCISSOR") {
+        console.log(`Computer choice is ${compChoice}`)
+        console.log(`Your choice is ${userInput}`)
+        console.log("You win!!!")
     }
 }
 else{
