@@ -13,9 +13,12 @@ rect.addEventListener("mousemove", (anything)=>{
     if(mouseLocation < position.width/2) {
         // console.log("You are on left side of the rectangle.")
         rect.style.backgroundColor = "red";
+        rect.style.transition = "all 1s"
+
     }
     else if(mouseLocation > position.width/2){
         rect.style.backgroundColor = "blue"
+        rect.style.transition = "all 1s"
     }
 }) 
 
